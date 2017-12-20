@@ -1,6 +1,3 @@
-
-
-
 function Person(firstName, LastName){
 	console.log(this);
 	this.firstName = firstName;
@@ -18,17 +15,3 @@ console.log(person)
 //Person { firstName: 'john'}
 //Person { firstName: 'john', lastName: 'doe' }
 //Person { firstName: 'john', lastName: 'doe' }
-
-
-
-
-
-
-
-
-console.log(person) //undefined
-
-//but
-console.log(global.firstName); //john
-console.log(global.LastName); //doe
-
