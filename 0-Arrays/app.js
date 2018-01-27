@@ -64,7 +64,15 @@ listArr.push(93, -90, 'test', null, {a: 1}, [2,4]);
 console.log(listArr); //[3, 2, -19, 4, 11, 93, -90, 'test', null, Object {a: 1}, Array [2,4]]
 
 
+//Array.prototype.pop()
+//removes last element from an array
+const listToPop = [3, 2, -19];
+console.log(listToPop); // [3,2, -19];
 
+let resultPop = listToPop.pop();
+
+console.log(listToPop); // [3, 2]
+console.log(resultPop); // -19
 
 
 
