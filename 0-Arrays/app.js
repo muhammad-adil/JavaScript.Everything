@@ -67,7 +67,7 @@ console.log(listArr); //[3, 2, -19, 4, 11, 93, -90, 'test', null, Object {a: 1},
 //Array.prototype.pop()
 //removes last element from an array
 const listToPop = [3, 2, -19];
-console.log(listToPop); // [3,2, -19];
+console.log(listToPop); // [3, 2, -19];
 
 let resultPop = listToPop.pop();
 
@@ -75,8 +75,28 @@ console.log(listToPop); // [3, 2]
 console.log(resultPop); // -19
 
 
+//Array.prototype.unshift()
+//add element in the beginning of an array
+const listUn = [3, 2, -19];
+console.log(listUn); // [3, 2, -19]
+
+let resultUn = listUn.unshift(100);
+console.log(listUn); // [100,3, 2, -19]
+console.log(resultUn); // 4
+
+let resultUnN = listUn.unshift(33, 'test');
+console.log(listUn); //[33, 'test', 100, 3, 2, -19]
+console.log(resultUnN); // 6
 
 
+//Array.prototype.shift()
+//remove element at the beginning of an array
+const listSh = ["1A3", 2, -19];
+console.log(listSh); // [3, 2, -19]
+
+let resultSh = listSh.shift();
+console.log(listSh); // [ 2, -19]
+console.log(resultSh); // 1A3  //removed element
 
 
-
+//
