@@ -10,8 +10,8 @@ console.log(result); //false
 let resultArr = Array.isArray([]);
 console.log(resultArr); //true
 
-let resultArr = Array.isArray([3,4,'a',5]);
-console.log(resultArr); //true
+let resultArrNew = Array.isArray([3,4,'a',5]);
+console.log(resultArrNew); //true
 
 
 // Array.of()
@@ -51,8 +51,17 @@ let resultPrototype = listProto.first()
 console.log(resultPrototype); // 4
 
 
+//Mutator methods
 
+//Array.prototype.push()
+const listArr = [3, 2, -19, 4];
+console.log(listArr); //[3, 2, -19, 4]
 
+listArr.push(11);
+console.log(listArr); //[3, 2, -19, 4, 11]
+
+listArr.push(93, -90, 'test', null, {a: 1}, [2,4]);
+console.log(listArr); //[3, 2, -19, 4, 11, 93, -90, 'test', null, Object {a: 1}, Array [2,4]]
 
 
 
