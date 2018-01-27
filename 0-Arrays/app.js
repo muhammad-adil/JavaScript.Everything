@@ -40,4 +40,26 @@ console.log(lenNull); //0
 
 
 //- prototype
+if (!Array.prototype.first){
+	Array.prototype.first = function(){
+		return this[0];
+	}
+}
+
+const listProto = [4, 2, -1];
+let resultPrototype = listProto.first()
+console.log(resultPrototype); // 4
+
+
+
+
+
+
+
+
+
+
+
+
+
 
