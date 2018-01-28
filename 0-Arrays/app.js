@@ -119,6 +119,37 @@ console.log(listSp) // [10, 100, 2, 9]
 console.log(resultSpAdd) // []
 
 
+//Array.prototype.sort()
+const listSort = [4, 14, 39, 1]
+console.log(listSort);
+
+let resultSort = listSort.sort((a,b) => {
+	return a - b ; // b- a for reverse sort
+});
+
+console.log(listSort);
+console.log(resultSort);
+
+//Sort continued
+const fruits = ['orange', 'banana', 'apple'];
+console.log(fruits);//[ "orange", "banana", "apple" ]
+
+let resultFr = fruits.sort();
+
+console.log(fruits); //[ "apple", "banana", "orange" ]
+console.log(resultFr); //[ "apple", "banana", "orange" ]
+
+//Reverse
+let fruitsRev = fruits.reverse();
+console.log(fruitsRev); // [ "orange", "banana", "apple" ]
+
+
+//
+
+
+
+
+
 
 
 
