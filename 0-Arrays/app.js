@@ -99,4 +99,36 @@ console.log(listSh); // [ 2, -19]
 console.log(resultSh); // 1A3  //removed element
 
 
-//
+//Array.prototype.splice()
+//insert element at index in an array 
+
+// splice(index, number of elements to remove)
+const listSp = [10, 4, 2, 9];
+console.log(listSp) // [10, 4, 2, 9]
+
+//Remove 4 from array
+const resultSp = listSp.splice(1, 1); //remove 1 item at index 1
+console.log(listSp) // [10, 2, 9]
+console.log(resultSp) // 4
+/*
+if you want to remove more just add elements quantity to remove from array in splice like splice(1 , 2)
+*/
+//Add element in an array
+const resultSpAdd = listSp.splice(1, 0, 100); //add 1 item at index 1
+console.log(listSp) // [10, 100, 2, 9]
+console.log(resultSpAdd) // []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
