@@ -169,6 +169,33 @@ console.log(resultInc) //true
 
 
 
+//Array.prototype.indexOf()
+let listI = [4, 2, 50, 3, 11];
+let resultI = listI.indexOf(4);
+let resultIn = listI.indexOf(100);
+
+console.log(resultI); // 0
+console.log(resultIn); // -1
+
+
+
+//Array.prototype.join()
+let listAlphabets = ['w', 'o', 'r', 'd'];
+let resultJoin = listAlphabets.join('');
+console.log(resultJoin); // word
+
+//join nums
+let listNums = [1, 2, 3, 4];
+let resultJoinNums = listNums.join('');// also can add -,./ between elements
+console.log(resultJoinNums); // 1234
+
+
+// Array.prototype.slice()
+let listSl = [1, 2, 3, 4];
+console.log("before", listSl);
+let resultSl = listSl.slice(2);
+console.log("after", listSl);
+console.log(resultSl); // [3, 4]
 
 
 
