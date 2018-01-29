@@ -144,17 +144,28 @@ let fruitsRev = fruits.reverse();
 console.log(fruitsRev); // [ "orange", "banana", "apple" ]
 
 
-//
+//Accessor Methods
+
+//Array.prototype.concat()
+//merge or concatenate two or more arrays
+
+let list1 = [2,3,4,5];
+let list2 = ['e', 'b', 'c'];
+let list3 = [-100, 99, 0];
+
+let resultConcat = list1.concat(list2);
+console.log('concatenated list', resultConcat);
+
+let resultMoreConcatenate = list1.concat(list2, list3);
+console.log(resultMoreConcatenate);
 
 
+//Array.prototype.includes()
+//check if element is in array or not, returns boolean true or false
 
-
-
-
-
-
-
-
+let listInc = [4, 2, 50, 3, 11];
+let resultInc = listInc.includes(50);
+console.log(resultInc) //true
 
 
 
