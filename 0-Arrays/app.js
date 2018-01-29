@@ -226,8 +226,17 @@ numbers.forEach((item, index) => {
 console.log(resultFE);//[ 0, 2, 6, 12, 20, 40, 60, 77, 96 ]
 
 
+//Array.prototype.map()
+// const numbers = [1,2,3,4,5,8,10,11,12];
+
+let mappedValues = numbers.map((item) => {
+	return item + 5;
+});
+console.log(mappedValues);//[ 6, 7, 8, 9, 10, 13, 15, 16, 17 ]
 
 
+
+//Array.prototype.reduce()
 
 
 
