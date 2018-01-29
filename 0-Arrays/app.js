@@ -198,6 +198,38 @@ console.log("after", listSl);
 console.log(resultSl); // [3, 4]
 
 
+/* Array iteration methods */
+
+// Array.prototype.every()
+const numbers = [1,2,3,4,5,8,10,11,12];
+let resultNums = numbers.every((item) => {
+	return item % 2 === 0
+})
+console.log(resultNums);// false
+
+
+//Array.prototype.filter
+// const numbers = [1,2,3,4,5,8,10,11,12];
+let resultFilter = numbers.filter((item) => {
+	return item > 8
+})
+console.log(resultFilter);//[10,11,12]
+
+
+//array.prototype.forEach
+// const numbers = [1,2,3,4,5,8,10,11,12];
+const resultFE = [];
+
+numbers.forEach((item, index) => {
+	resultFE.push(item * index);
+});
+console.log(resultFE);//[ 0, 2, 6, 12, 20, 40, 60, 77, 96 ]
+
+
+
+
+
+
 
 
 
