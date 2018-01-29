@@ -237,8 +237,16 @@ console.log(mappedValues);//[ 6, 7, 8, 9, 10, 13, 15, 16, 17 ]
 
 
 //Array.prototype.reduce()
+// const numbers = [1,2,3,4,5,8,10,11,12];
 
+let total = numbers.reduce((accumulator, currentValue) => {
+	return accumulator + currentValue;
+})
+console.log(total); //56
 
-
-
+const abc = ['a', 'b', 'c', 'd'];
+let totalABC = numbers.reduce((accumulator, currentValue) => {
+	return accumulator + "," + currentValue;
+})
+console.log(abc); // [ "a", "b", "c", "d" ]
 
