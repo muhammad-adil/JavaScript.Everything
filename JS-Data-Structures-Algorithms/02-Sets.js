@@ -19,3 +19,14 @@ function mySet() {
         }
         return false;
     };
+
+        // this method will remove an element from a set
+        this.remove = function(element) {
+            if(this.has(element)){
+                index = collection.indexOf(element);
+                collection.splice(index,1);
+                return true;
+            }
+            return false;
+        };
+    
