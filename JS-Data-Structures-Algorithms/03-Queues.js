@@ -21,3 +21,13 @@ function Queue () {
         return (collection.length === 0); 
     };
 }
+
+
+var q = new Queue(); 
+q.enqueue('a'); 
+q.enqueue('b');
+q.enqueue('c');
+q.print();
+q.dequeue();
+console.log(q.front());
+q.print();
