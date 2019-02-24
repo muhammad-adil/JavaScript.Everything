@@ -20,3 +20,7 @@ room2.AvailableMemory();
 // var room1 = new room(); 
 // // Created object with default valuesconsole.log('ram' in computer1); //returns true
 // console.log(room1.hasOwnProperty('book')); // returns false
+
+/* 
+This is because the in operator searches for the property first in the object's root and then the search continues in the prototype of the object whereas hasOwnProperty restricts its search to the root elements of the object in which the property is being searched.
+*/
