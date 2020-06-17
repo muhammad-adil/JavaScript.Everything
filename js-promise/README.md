@@ -1,4 +1,4 @@
 
-## All ABout Promise
+## All About Promise
 
 ![](Promise.png?raw=true)
